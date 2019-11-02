@@ -7,32 +7,27 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <title>Whether</title>
-    
+
     <link ref="stylesheet" href="assets/css/reset.css" type="text/css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link ref="stylesheet" href="assets/css/style.css" type="text/css">
-    
-    <script
-        src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-        crossorigin="anonymous"></script>
-
-
-   
- 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-
-        
-
-        <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link ref="stylesheet" href="assets/css/style.css" type="text/css">
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
-    <script src="assets/javascript/spotify.js"></script>
-    <script src="assets/javascript/pinterest.js"></script>
-    <script src="assets/javascript/app.js"></script>
+
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+
+
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -48,14 +43,14 @@
                     <div class="col-sm-6">
                         <div class="card" id="zipcodecard">
                             <div class="card-body" id="zipcodecardbody">
-                            
+
                                 <p>Zip Code</p>
                                 <div id="weatherinfo">
-                                    
-                                    </div>
+
+                                </div>
                                 <form>
-    
-            
+
+
                                     <input type="text" id="userZipCode" placeholder="Zip Code">
                                 </form>
                                 <button id="submit">Submit</button>
@@ -65,7 +60,9 @@
                     <div class="col-sm-6">
                         <div class="card" id="pinterestcard">
                             <div class="card-body" id="pinterestcardbody">
-                                <p>This is some text within a card body.</p>
+                                <!--Spotify Player-->
+                                <iframe id="spotPlayer" width="480" height="380" frameborder="0"
+                                    allowtransparency="true"></iframe>
                             </div>
                         </div>
                     </div>
@@ -83,7 +80,10 @@
         </div>
     </div>
 
+    <script src="assets/javascript/spotify.js"></script>
     <div id="footer">
+        <script src="assets/javascript/pinterest.js"></script>
+        <script src="assets/javascript/app.js"></script>
         <img src="assets/images/openWeatherMapLogo.png" class="logo">
         <img src="assets/images/spotifyLogo.png" class="logo">
         <img src="assets/images/pinterestLogo.png" class="logo">
