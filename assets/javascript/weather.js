@@ -1,13 +1,13 @@
 
+
+
 $("#submit").on("click", function(){
     event.preventDefault();
    var userZip = $("#userZipCode").val().trim();
    console.log(userZip);
+   $("#userZipCode").val("");
 
-
-
-
-   var APIKey = "3bfb74ac63b0d6cb8864df78fc2f93bc";
+ var APIKey = "3bfb74ac63b0d6cb8864df78fc2f93bc";
 
 // Here we are building the URL we need to query the database
 var queryURL = "https://api.openweathermap.org/data/2.5/weather?zip="+ userZip + ",us&units=imperial&appid=" + APIKey;
@@ -33,14 +33,14 @@ var main = response.weather[0].main;
 var description= response.weather[0].description;
 var temp = response.main.temp;
 
-
 $("#weatherinfo").html("<h3> Temp " + temp + description + main + "<h3> ");
-
-
-
 
    
 });
 
 
+
+
 });
+
+
