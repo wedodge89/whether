@@ -9,7 +9,7 @@ $("#submit").on("click", function() {
   var APIKey = "3bfb74ac63b0d6cb8864df78fc2f93bc";
 
   // Here we are building the URL we need to query the database
-  var queryURL =
+  var queryURL1 =
     "https://api.openweathermap.org/data/2.5/weather?zip=" +
     userZip +
     ",us&units=imperial&appid=" +
@@ -17,11 +17,20 @@ $("#submit").on("click", function() {
 
   // Here we run our AJAX call to the OpenWeatherMap API
   $.ajax({
-    url: queryURL,
+    url: queryURL1,
     method: "GET"
   })
     // We store all of the retrieved data inside of an object called "response"
     .then(function(response) {
+      var queryURL = "http://www.boredapi.com/api/activity/";
+
+      $.ajax({
+        url: queryURL,
+        method: "GET"
+      }) // We store all of the retrieved data inside of an object called "response"
+        .then(function(response) {
+          console.log(response.activity);
+        });
       // Log the queryURL
       console.log(queryURL);
 
@@ -33,8 +42,6 @@ $("#submit").on("click", function() {
       var main = response.weather[0].main;
       var description = response.weather[0].description;
       var temp = response.main.temp;
-
-      // subject = "weather"+ main
       var queryURL =
         "https://openlibrary.org/subjects/" +
         description +
@@ -46,6 +53,8 @@ $("#submit").on("click", function() {
         console.log(queryURL);
         console.log(response.works[1].title);
       });
+
+      // subject = "weather"+ main
 
       console.log(subject);
       console.log(response.works[1]);
@@ -125,13 +134,3 @@ $("#submit").on("click", function() {
       );
     });
 });
-
-var queryURL = "http://www.boredapi.com/api/activity/";
-
-$.ajax({
-  url: queryURL,
-  method: "GET"
-}) // We store all of the retrieved data inside of an object called "response"
-  .then(function(response) {
-    console.log(response.activity);
-  });
