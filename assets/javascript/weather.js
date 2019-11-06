@@ -1,6 +1,7 @@
 
 
 
+
 $("#submit").on("click", function(){
     event.preventDefault();
    var userZip = $("#userZipCode").val().trim();
@@ -44,7 +45,6 @@ $("#weatherinfo").html("<h3> Temp " + temp + description + main + "<h3> ");
 
 
 });
-
 
 
 
