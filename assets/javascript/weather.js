@@ -24,9 +24,9 @@ method: "GET"
 console.log(queryURL);
 
 // Log the resulting object
-console.log(response.weather[0].main);
-console.log(response.weather[0].description);
-console.log(response.main.temp);
+// console.log(response.weather[0].main);
+// console.log(response.weather[0].description);
+// console.log(response.main.temp);
 
 
 var main = response.weather[0].main;
@@ -35,6 +35,8 @@ var temp = response.main.temp;
 
 $("#weatherinfo").html("<h3> Temp " + temp + description + main + "<h3> ");
 
+
+
    
 });
 
@@ -42,5 +44,8 @@ $("#weatherinfo").html("<h3> Temp " + temp + description + main + "<h3> ");
 
 
 });
+
+
+
 
 
