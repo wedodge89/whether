@@ -34,6 +34,22 @@ $("#submit").on("click", function() {
       var description = response.weather[0].description;
       var temp = response.main.temp;
 
+      // subject = "weather"+ main
+      var queryURL =
+        "https://openlibrary.org/subjects/" +
+        description +
+        ".json?details=true";
+      $.ajax({
+        url: queryURL,
+        method: "GET"
+      }).then(function(response) {
+        console.log(queryURL);
+        console.log(response.works[1].title);
+      });
+
+      console.log(subject);
+      console.log(response.works[1]);
+
       var spotifyWeatherPLaylist = "";
       var openPlaylist = `https://open.spotify.com/embed/playlist/${spotifyWeatherPLaylist}`;
       switch (description) {
