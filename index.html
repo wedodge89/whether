@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link ref="stylesheet" href="assets/css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
     <!--jQuery CDN-->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -18,43 +23,43 @@
 
 <body>
 
-    <div class="jumbotron" id="jumbotron">
-        <h1 class="display-4" id="whether">Whether</h1>
+    <div class="container-fluid" id="entireContainer">
+    <div id="header">
+        <h1 id="whether">Whether</h1>
 
     </div>
-    <div class="container" id="entireContainer">
-        <div class="card" id="entirecard">
-            <div class="card-body" id="entirecardbody">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="card" id="zipcodecard">
-                            <div class="card-body" id="zipcodecardbody">
-
-                                <p>Zip Code</p>
-                                <div id="weatherinfo">
-
-                                </div>
-                                <form>
-
-
-                                    <input type="text" id="userZipCode" placeholder="Zip Code">
-                                </form>
-                                <button id="submit">Submit</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="card" id="pinterestcard">
-                            <div class="card-body" id="pinterestcardbody">
-                                <!--Spotify Player-->
-                                <iframe id="spotPlayer" width="480" height="380" frameborder="0"
-                                    allowtransparency="true"></iframe>
-                            </div>
-                        </div>
-                    </div>
+        <div class="row">
+            <div class="col-sm-10">
+                <div class="form-group">
+                        <input class="form-control" type="text" id="userZipCode" placeholder="Input Your Zip Code Here">
                 </div>
             </div>
+            <div class="col-sm-2">
+                <button class="btn btn-primary mb-2" id="submit">Submit</button>
+            </div>
         </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+                <div id="bored-section">
+                <p id="bored-text">"Idea goes here"</p>
+                </div>
+                <div id="book-section">
+                <p id="book-text">"Book selection goes here"</p>
+                </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="forecast">
+                <h2>weather goes here</h2>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <iframe id="spotPlayer" width="320" height="480" frameborder="0" allowtransparency="true"></iframe>
+        </div>  
+    </div>
+    </div>
+    </div>
+    </div>
     </div>
     </div>
     <script src="assets/javascript/app.js"></script>
