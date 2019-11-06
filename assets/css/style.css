@@ -1,33 +1,71 @@
-#jumbotron {
-    color: #494CA2;
-    font-size: 48px;
-    background-color: #C6CBEF;
+#header {
+  color: rgb(54, 117, 126);
+  font-size: 24px;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: "Gloria Hallelujah", cursive;
+  padding: 20px;
+}
+#submit {
+  width: 100%;
+}
+#userZipCode {
+  width: 100%;
+}
+#spotPlayer {
+  position: relative;
+  right: 12px;
+  width: 100%;
+}
+#bored-section {
+  position: relative;
+  margin-left: 40px;
+  top: 0px;
+  height: 35vh;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.384);
 }
 
+#bored-text, #book-text{
+    position: relative;
+    text-align: center;
+    font-size: 4vh;
+    color: rgb(54, 117, 126);
+    top: 38%;
+
+}
+
+#book-section {
+  position: relative;
+  margin-left: 40px;
+  top: 2%;
+  height: 35vh;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.411);
+}
+#forecast {
+  position: relative;
+  text-align: center;
+  top: 40%;
+}
 body {
-    background-color: #E3E7F1;
-    color: #494CA2;
+  background-color: #9ee2eb;
+  color: rgb(54, 117, 126);
 }
 
 #entirecard {
-    background-color: #8186D5;
+  background-color: rgb(31, 31, 31);
 }
 
-#zipcodecard, #pinterestcard, #youtubeplayercard {
-    background-color:   #E3E7F1;
-}
-
-#footer {
-    background-color: black;
-    height: 100px;
-    width: 100vw;
-    position: fixed;
-    bottom: 0px;
-    text-align: center;
+#zipcodecard,
+#pinterestcard,
+#youtubeplayercard {
+  background-color: rgb(19, 19, 19);
 }
 
 .logo {
-    width: 90px;
-    height: 90px;
-    padding: 5px;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  text-align: center;
 }
