@@ -38,14 +38,15 @@ $("#weatherinfo").html("<h3> Temp " + temp + description + main + "<h3> ");
 
 
 
-   
-});
 
 
 
 
 });
 
+
+
+});
 
 
 
