@@ -17,55 +17,38 @@
   right: 12px;
   width: 100%;
 }
-#bored-section {
-  position: relative;
-  margin-left: 40px;
-  top: 0px;
-  height: 35vh;
-  display: block;
-  background-color: rgba(255, 255, 255, 0.384);
+#bored-section, #book-section {
+    position: relative;
+    height: 50%;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.63);
+    border: 20px;
+    border-right: 3px solid rgb(35, 75, 82, 0.5);
 }
-
-#bored-text, #book-text{
+#bored-section{
+border-bottom: 1px solid rgb(35, 75, 82, 0.5);
+}
+#bored-text, #book-text, #forecast-text{
     position: relative;
     text-align: center;
     font-size: 4vh;
-    color: rgb(54, 117, 126);
-    top: 38%;
-
+    color: rgb(35, 75, 82);
+    top: 40%;
 }
 
-#book-section {
-  position: relative;
-  margin-left: 40px;
-  top: 2%;
-  height: 35vh;
-  display: block;
-  background-color: rgba(255, 255, 255, 0.411);
-}
-#forecast {
+.forecast, .spotify-container {
   position: relative;
   text-align: center;
-  top: 40%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.63);
 }
 body {
   background-color: #9ee2eb;
-  color: rgb(54, 117, 126);
-}
-
-#entirecard {
-  background-color: rgb(31, 31, 31);
 }
 
 #zipcodecard,
 #pinterestcard,
 #youtubeplayercard {
   background-color: rgb(19, 19, 19);
-}
-
-.logo {
-  width: 50px;
-  height: 50px;
-  padding: 5px;
-  text-align: center;
 }
