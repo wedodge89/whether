@@ -42,22 +42,31 @@ $("#submit").on("click", function() {
       var main = response.weather[0].main;
       var description = response.weather[0].description;
       var temp = response.main.temp;
-      var queryURL =
-        "https://openlibrary.org/subjects/" +
-        description +
-        ".json?details=true";
-      $.ajax({
-        url: queryURL,
-        method: "GET"
-      }).then(function(response) {
-        console.log(queryURL);
-        console.log(response.works[1].title);
+
+
+
+      var settings = {
+        "async": true,
+        "crossDomain": true,
+        "url": "https://thundercomb-poetry-db-v1.p.rapidapi.com/title/" + main,
+        "method": "GET",
+        "headers": {
+          "x-rapidapi-host": "thundercomb-poetry-db-v1.p.rapidapi.com",
+          "x-rapidapi-key": "47c5c7f1fdmsh7c24f8f0bce2756p1d7714jsn95969474903a"
+        }
+      }
+      
+      $.ajax(settings).done(function (response) {
+        console.log(response)
+        let poemBody =response[0].lines;
+        let poemTitle= response[0].lines[0]
+        console.log(poemBody);
+        console.log(poemTitle);
+
+
+
       });
-
-      // subject = "weather"+ main
-
-      console.log(subject);
-      console.log(response.works[1]);
+      
 
       var spotifyWeatherPLaylist = "";
       var openPlaylist = `https://open.spotify.com/embed/playlist/${spotifyWeatherPLaylist}`;
