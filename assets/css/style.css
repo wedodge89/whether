@@ -27,6 +27,7 @@
 }
 #bored-section,
 #book-section {
+  overflow: auto;
   position: relative;
   height: 50%;
   display: block;

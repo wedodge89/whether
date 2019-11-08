@@ -171,8 +171,9 @@ $("#submit").on("click", function() {
         // code block
       }
 
-      $("#weatherinfo").html(
-        "<h3> Temp " + temp + description + main + "<h3> "
+      $("#forecast-text").html("<h3> Temp: " + temp + "</h3>");
+      $("#weather-condition").html(
+        "<h3> Weather: " + description.toUpperCase() + "</h3>"
       );
     });
 });
