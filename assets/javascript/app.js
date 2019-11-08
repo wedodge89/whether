@@ -176,6 +176,8 @@ $("#submit").on("click", function() {
       }
 
       $("#forecast-text").html(temp);
+
       $("#weather-condition").html(description.toUpperCase());
+
     });
 });
