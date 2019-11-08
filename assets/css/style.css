@@ -1,10 +1,9 @@
-#weather-icon{
-    position: relative;
-    width: 25vh;
-    height: 25vh;
-    top: 12vh;
+#weather-icon {
+  position: relative;
+  width: 25vh;
+  height: 25vh;
+  top: 12vh;
 }
-
 #header {
   color: rgb(54, 117, 126);
   font-size: 24px;
@@ -14,7 +13,7 @@
   background-color: rgba(255, 255, 255, 0.9);
 }
 #submit {
-    width: 100%;
+  width: 100%;
 }
 #userZipCode {
   width: 100%;
@@ -40,17 +39,29 @@
   border-bottom: 1px solid rgb(35, 75, 82, 0.5);
   background-image: url("../images/doodles.png");
 }
-#book-section{
-    background-image: url("../images/lined_paper.png");
+#book-section {
+  background-image: url("../images/lined_paper.png");
 }
 #bored-text,
 #book-text,
-#forecast-text {
+#forecast-text
+#weather-condition {
   position: relative;
   text-align: center;
   font-size: 4vh;
   color: rgb(35, 75, 82);
   top: 40%;
+}
+
+#forecast-text{
+  position: relative;
+  font-size: 8vh;
+  top: 14vh;
+}
+#weather-condition{
+  position: relative;
+  font-size: 4vh;
+  top: 10vh;
 }
 
 .forecast,
@@ -66,4 +77,3 @@ body {
   background-image: url("../images/weather.png");
   background-color: #9ee2eb;
 }
-
