@@ -1,6 +1,8 @@
 #weather-icon{
-    width: 20vh;
-    height: 20vh;
+    position: relative;
+    width: 25vh;
+    height: 25vh;
+    top: 12vh;
 }
 
 #header {
