@@ -65,14 +65,13 @@ $("#submit").on("click", function() {
         $("#book-title").text(poemTitle);
         $("#book-text").text(poemBody);
       });
+      var openPlaylist;
 
-      var spotifyWeatherPLaylist = "";
-      var openPlaylist = `https://open.spotify.com/embed/playlist/${spotifyWeatherPLaylist}`;
       switch (description) {
         case "clear sky":
           console.log("It is a clear sky");
-          spotifyWeatherPLaylist = "1xY6msLHX1W34EzB0UkkbU";
-          openPlaylist = `https://open.spotify.com/embed/playlist/${spotifyWeatherPLaylist}`;
+          openPlaylist =
+            "https://open.spotify.com/embed/playlist/1xY6msLHX1W34EzB0UkkbU";
           $("#spotPlayer").attr("src", openPlaylist);
           $("#weather-icon").attr(
             "src",
@@ -82,8 +81,19 @@ $("#submit").on("click", function() {
           break;
         case "few clouds":
           console.log("There are a few clouds");
-          spotifyWeatherPLaylist = "3HJx0AGRXXydTy04lV2oQS";
-          openPlaylist = `https://open.spotify.com/embed/playlist/${spotifyWeatherPLaylist}`;
+          openPlaylist =
+            "https://open.spotify.com/embed/album/2U56ab3wZp6jsItpItXgXJ";
+          $("#spotPlayer").attr("src", openPlaylist);
+          $("#weather-icon").attr(
+            "src",
+            "assets/images/weather-icons/cloudy.png"
+          );
+
+          break;
+        case "overcast clouds":
+          console.log("There are a few clouds");
+          openPlaylist =
+            "https://open.spotify.com/embed/album/37i9dQZF1DWTEbYi1zYy0Z";
           $("#spotPlayer").attr("src", openPlaylist);
           $("#weather-icon").attr(
             "src",
@@ -93,8 +103,8 @@ $("#submit").on("click", function() {
           break;
         case "scattered clouds":
           console.log("There are scattered clouds");
-          spotifyWeatherPLaylist = "2cZIKLcAmzn0QdaFs3Aozz";
-          openPlaylist = `https://open.spotify.com/embed/playlist/${spotifyWeatherPLaylist}`;
+          openPlaylist =
+            "https://open.spotify.com/embed/playlist/2cZIKLcAmzn0QdaFs3Aozz";
           $("#spotPlayer").attr("src", openPlaylist);
           $("#weather-icon").attr(
             "src",
@@ -104,8 +114,8 @@ $("#submit").on("click", function() {
           break;
         case "broken clouds":
           console.log("There are broken clouds");
-          spotifyWeatherPLaylist = "2U56ab3wZp6jsItpItXgXJ";
-          openPlaylist = `https://open.spotify.com/embed/playlist/${spotifyWeatherPLaylist}`;
+          openPlaylist =
+            "https://open.spotify.com/embed/playlist/3SdH16MN2CvucZeur3fkDN";
           $("#spotPlayer").attr("src", openPlaylist);
           $("#weather-icon").attr(
             "src",
@@ -115,8 +125,18 @@ $("#submit").on("click", function() {
           break;
         case "shower rain":
           console.log("There is shower rain");
-          spotifyWeatherPLaylist = "5ZSy5LuSo6UA5v8hrGZtk0";
-          openPlaylist = `https://open.spotify.com/embed/playlist/${spotifyWeatherPLaylist}`;
+          openPlaylist =
+            "https://open.spotify.com/embed/playlist/5ZSy5LuSo6UA5v8hrGZtk0";
+          $("#spotPlayer").attr("src", openPlaylist);
+          $("#weather-icon").attr(
+            "src",
+            "assets/images/weather-icons/rainy.png"
+          );
+
+        case "light rain":
+          console.log("There is shower rain");
+          openPlaylist =
+            "https://open.spotify.com/embed/playlist/37i9dQZF1DXbvABJXBIyiY";
           $("#spotPlayer").attr("src", openPlaylist);
           $("#weather-icon").attr(
             "src",
@@ -126,8 +146,97 @@ $("#submit").on("click", function() {
           break;
         case "rain":
           console.log("There is rain");
-          spotifyWeatherPLaylist = "37i9dQZF1DWYxwmBaMqxsl";
-          openPlaylist = `https://open.spotify.com/embed/playlist/${spotifyWeatherPLaylist}`;
+          openPlaylist =
+            "https://open.spotify.com/embed/playlist/37i9dQZF1DWYxwmBaMqxsl";
+          $("#spotPlayer").attr("src", openPlaylist);
+          $("#weather-icon").attr(
+            "src",
+            "assets/images/weather-icons/rainy.png"
+          );
+
+          break;
+
+        case "heavy intensity rain":
+          console.log("There is rain");
+          openPlaylist =
+            "https://open.spotify.com/embed/playlist/37i9dQZF1DWYxwmBaMqxsl";
+          $("#spotPlayer").attr("src", openPlaylist);
+          $("#weather-icon").attr(
+            "src",
+            "assets/images/weather-icons/rainy.png"
+          );
+
+          break;
+        case "moderate rain":
+          console.log("There is rain");
+          openPlaylist =
+            "https://open.spotify.com/embed/playlist/37i9dQZF1DWYxwmBaMqxsl";
+          $("#spotPlayer").attr("src", openPlaylist);
+          $("#weather-icon").attr(
+            "src",
+            "assets/images/weather-icons/rainy.png"
+          );
+
+          break;
+        case "very heavy rain":
+          console.log("There is rain");
+          openPlaylist =
+            "https://open.spotify.com/embed/playlist/37i9dQZF1DWYxwmBaMqxsl";
+          $("#spotPlayer").attr("src", openPlaylist);
+          $("#weather-icon").attr(
+            "src",
+            "assets/images/weather-icons/rainy.png"
+          );
+
+          break;
+        case "extreme rain":
+          console.log("There is rain");
+          openPlaylist =
+            "https://open.spotify.com/embed/playlist/37i9dQZF1DWYxwmBaMqxsl";
+          $("#spotPlayer").attr("src", openPlaylist);
+          $("#weather-icon").attr(
+            "src",
+            "assets/images/weather-icons/rainy.png"
+          );
+
+          break;
+        case "freezing rain":
+          console.log("There is rain");
+          openPlaylist =
+            "https://open.spotify.com/embed/playlist/5wfRF1bOQJF526Vs1MOApi";
+          $("#spotPlayer").attr("src", openPlaylist);
+          $("#weather-icon").attr(
+            "src",
+            "assets/images/weather-icons/rainy.png"
+          );
+
+          break;
+        case "light intensity shower rain":
+          console.log("There is rain");
+          openPlaylist =
+            "https://open.spotify.com/embed/playlist/37i9dQZF1DWYxwmBaMqxsl";
+          $("#spotPlayer").attr("src", openPlaylist);
+          $("#weather-icon").attr(
+            "src",
+            "assets/images/weather-icons/rainy.png"
+          );
+
+          break;
+        case "	heavy intensity shower rain":
+          console.log("There is rain");
+          openPlaylist =
+            "https://open.spotify.com/embed/playlist/37i9dQZF1DWZ4eoHSGpAXu";
+          $("#spotPlayer").attr("src", openPlaylist);
+          $("#weather-icon").attr(
+            "src",
+            "assets/images/weather-icons/rainy.png"
+          );
+
+          break;
+        case "ragged shower rain":
+          console.log("There is rain");
+          openPlaylist =
+            "https://open.spotify.com/embed/playlist/37i9dQZF1DWYxwmBaMqxsl";
           $("#spotPlayer").attr("src", openPlaylist);
           $("#weather-icon").attr(
             "src",
@@ -137,8 +246,8 @@ $("#submit").on("click", function() {
           break;
         case "thunderstorm":
           console.log("There is a thunderstorm");
-          spotifyWeatherPLaylist = "4iCrYUIaPeRnIe60IpZNlt";
-          openPlaylist = `https://open.spotify.com/embed/playlist/${spotifyWeatherPLaylist}`;
+          openPlaylist =
+            "https://open.spotify.com/embed/playlist/4iCrYUIaPeRnIe60IpZNlt";
           $("#spotPlayer").attr("src", openPlaylist);
           $("#weather-icon").attr(
             "src",
@@ -147,8 +256,96 @@ $("#submit").on("click", function() {
           break;
         case "snow":
           console.log("There is snow");
-          spotifyWeatherPLaylist = "3lVR8JkKxpnGNHRFdmEveZ";
-          openPlaylist = `https://open.spotify.com/embed/playlist/${spotifyWeatherPLaylist}`;
+          openPlaylist =
+            "https://open.spotify.com/embed/playlist/3lVR8JkKxpnGNHRFdmEveZ";
+          $("#spotPlayer").attr("src", openPlaylist);
+          $("#weather-icon").attr(
+            "src",
+            "assets/images/weather-icons/snowy.png"
+          );
+
+          break;
+        case "light snow":
+          console.log("There is snow");
+          openPlaylist =
+            "https://open.spotify.com/embed/playlist/3lVR8JkKxpnGNHRFdmEveZ";
+          $("#spotPlayer").attr("src", openPlaylist);
+          $("#weather-icon").attr(
+            "src",
+            "assets/images/weather-icons/snowy.png"
+          );
+
+          break;
+        case "sleet":
+          console.log("There is snow");
+          openPlaylist =
+            "https://open.spotify.com/embed/playlist/3lVR8JkKxpnGNHRFdmEveZ";
+          $("#spotPlayer").attr("src", openPlaylist);
+          $("#weather-icon").attr(
+            "src",
+            "assets/images/weather-icons/snowy.png"
+          );
+
+          break;
+        case "shower sleet":
+          console.log("There is snow");
+          openPlaylist =
+            "https://open.spotify.com/embed/playlist/3lVR8JkKxpnGNHRFdmEveZ";
+          $("#spotPlayer").attr("src", openPlaylist);
+          $("#weather-icon").attr(
+            "src",
+            "assets/images/weather-icons/snowy.png"
+          );
+
+          break;
+        case "light shower sleet":
+          console.log("There is snow");
+          openPlaylist =
+            "https://open.spotify.com/embed/playlist/3lVR8JkKxpnGNHRFdmEveZ";
+          $("#spotPlayer").attr("src", openPlaylist);
+          $("#weather-icon").attr(
+            "src",
+            "assets/images/weather-icons/snowy.png"
+          );
+
+          break;
+        case "light rain and snow":
+          console.log("There is snow");
+          openPlaylist =
+            "https://open.spotify.com/embed/playlist/3lVR8JkKxpnGNHRFdmEveZ";
+          $("#spotPlayer").attr("src", openPlaylist);
+          $("#weather-icon").attr(
+            "src",
+            "assets/images/weather-icons/snowy.png"
+          );
+
+          break;
+        case "rain and snow":
+          console.log("There is snow");
+          openPlaylist =
+            "https://open.spotify.com/embed/playlist/3lVR8JkKxpnGNHRFdmEveZ";
+          $("#spotPlayer").attr("src", openPlaylist);
+          $("#weather-icon").attr(
+            "src",
+            "assets/images/weather-icons/snowy.png"
+          );
+
+          break;
+        case "ligth shower snow":
+          console.log("There is snow");
+          openPlaylist =
+            "https://open.spotify.com/embed/playlist/3lVR8JkKxpnGNHRFdmEveZ";
+          $("#spotPlayer").attr("src", openPlaylist);
+          $("#weather-icon").attr(
+            "src",
+            "assets/images/weather-icons/snowy.png"
+          );
+
+          break;
+        case "heavy snow":
+          console.log("There is snow");
+          openPlaylist =
+            "https://open.spotify.com/embed/playlist/3lVR8JkKxpnGNHRFdmEveZ";
           $("#spotPlayer").attr("src", openPlaylist);
           $("#weather-icon").attr(
             "src",
@@ -158,8 +355,8 @@ $("#submit").on("click", function() {
           break;
         case "mist":
           console.log("There is mist");
-          spotifyWeatherPLaylist = "6Em0xPIMIimYOrMxPDGGCc";
-          openPlaylist = `https://open.spotify.com/embed/playlist/${spotifyWeatherPLaylist}`;
+          openPlaylist =
+            "https://open.spotify.com/embed/playlist/6Em0xPIMIimYOrMxPDGGCc";
           $("#spotPlayer").attr("src", openPlaylist);
           $("#weather-icon").attr(
             "src",
@@ -177,7 +374,6 @@ $("#submit").on("click", function() {
 
       $("#forecast-text").html(temp);
 
-      $("#weather-condition").html(description.toUpperCase());
-
+      $("#weather-condition").html(description);
     });
 });
