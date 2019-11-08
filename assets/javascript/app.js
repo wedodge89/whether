@@ -22,7 +22,7 @@ $("#submit").on("click", function() {
   })
     // We store all of the retrieved data inside of an object called "response"
     .then(function(response) {
-      var queryURL = "http://www.boredapi.com/api/activity/";
+      var queryURL = "https://www.boredapi.com/api/activity/";
 
       $.ajax({
         url: queryURL,
@@ -30,6 +30,8 @@ $("#submit").on("click", function() {
       }) // We store all of the retrieved data inside of an object called "response"
         .then(function(response) {
           console.log(response.activity);
+          var boredStuff = response.activity;
+          $("#bored-text").text(boredStuff);
         });
       // Log the queryURL
       console.log(queryURL);
@@ -60,6 +62,8 @@ $("#submit").on("click", function() {
         let poemTitle = response[0].lines[0];
         console.log(poemBody);
         console.log(poemTitle);
+        $("#book-title").text(poemTitle);
+        $("#book-text").text(poemBody);
       });
 
       var spotifyWeatherPLaylist = "";
@@ -172,8 +176,8 @@ $("#submit").on("click", function() {
       }
 
       $("#forecast-text").html(temp);
-      $("#weather-condition").html(
-        description.toUpperCase()
-      );
+
+      $("#weather-condition").html(description.toUpperCase());
+
     });
 });

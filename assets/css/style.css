@@ -45,8 +45,7 @@
 }
 #bored-text,
 #book-text,
-#forecast-text
-#weather-condition {
+#forecast-text #weather-condition {
   position: relative;
   text-align: center;
   font-size: 4vh;
@@ -54,12 +53,12 @@
   top: 40%;
 }
 
-#forecast-text{
+#forecast-text {
   position: relative;
   font-size: 8vh;
   top: 14vh;
 }
-#weather-condition{
+#weather-condition {
   position: relative;
   font-size: 4vh;
   top: 10vh;
