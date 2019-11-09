@@ -29,8 +29,7 @@
 #book-section {
   overflow: auto;
   position: relative;
-  height: 50%;
-  display: block;
+  height: 38vh;
   background-color: rgba(255, 255, 255, 0.3);
   border: 20px;
   border-right: 2px solid rgb(35, 75, 82, 0.5);
@@ -45,12 +44,18 @@
 }
 #bored-text,
 #book-text,
+#book-title,
 #forecast-text #weather-condition {
   position: relative;
   text-align: center;
   font-size: 4vh;
   color: rgb(35, 75, 82);
   top: 40%;
+}
+#book-title{
+  position: relative;
+  font-style: oblique;
+  top: 0;
 }
 
 #forecast-text {
